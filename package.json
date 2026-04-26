@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "version": "1.0.0",
-  "homepage": "https://your-username.github.io/portfolio/",
+  "homepage": "https://eavicioso.github.io/portfolio/",
   "type": "module",
   "scripts": {
     "dev": "vite",
