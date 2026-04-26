@@ -22,7 +22,7 @@ export const config: PortfolioConfig = {
 
   // ── REDES SOCIALES ───────────────────────────────
   social: [
-    { label: "LinkedIn", url: "www.linkedin.com/in/engels-alejandro-vicioso-89ab13363",     icon: "linkedin" },
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/engels-alejandro-vicioso-89ab13363",     icon: "linkedin" },
     { label: "Email",    url: "mailto:viciosorojas.engels@gmail.com",                icon: "mail"     },
   ],
 
