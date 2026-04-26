@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    @apply bg-base-100 text-base-content;
+  }
+  ::selection {
+    background-color: rgb(59 130 246 / 20%);
+    color: rgb(147 197 253);
+  }
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(59 130 246 / 20%);
+    border-radius: 99px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(59 130 246 / 40%);
+  }
+}
+
+@layer utilities {
+  .hero-fade-in {
+    animation: hero-rise 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .hero-delay-1 { animation-delay: 0.1s; }
+  .hero-delay-2 { animation-delay: 0.2s; }
+  .hero-delay-3 { animation-delay: 0.3s; }
+  .hero-delay-4 { animation-delay: 0.45s; }
+  .hero-delay-5 { animation-delay: 0.6s; }
+
+  @keyframes hero-rise {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero-grid-bg {
+    background-image:
+      linear-gradient(rgba(59, 130, 246, 0.15) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(59, 130, 246, 0.15) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .project-card {
+    animation: card-entrance 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  @keyframes card-entrance {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+}
